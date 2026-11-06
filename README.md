@@ -3,6 +3,25 @@
 
 ---
 
+## How to Run
+
+Requires Python 3.x (no extra packages).
+
+```bash
+
+python test_structures.py
+
+python custom_stack.py
+
+python custom_queue.py
+```
+
+### Implementation Notes
+- **`custom_stack.py`** – `is_valid_parentheses` pushes each opening bracket onto a list used as a stack. Each closing bracket must match the top of the stack (LIFO) or the string is invalid. The string is valid only if the stack is empty at the end.
+- **`custom_queue.py`** – `Queue` is a FIFO list: `enqueue` appends to the back, `dequeue`/`peek` work on the front. `select_and_announce_winner` picks a random position, then dequeues customers from the front until the winner is removed, and prints/returns the winner.
+
+---
+
 ## Overview
 In this lab, you’ll apply **stacks** and **queues** to solve two real-world challenges. First, you’ll implement a **parentheses validator** using a stack—a feature commonly used in compilers or formatting tools. Then, you'll simulate a **customer raffle system** using a queue, where entries are processed in the order received and a winner is selected.
 
@@ -73,29 +92,3 @@ By focusing on **LIFO** (last-in, first-out) and **FIFO** (first-in, first-out) 
      ```
    - Ensure all tests pass before submission.
 
-4. **Push and Merge**:
-   - Commit your work regularly.
-   - Push to your feature branch.
-   - Open a Pull Request (PR).
-   - Merge to `main` after review.
-
----
-
-## Task 4: Document and Maintain
-
-### Best Practice Documentation Steps
-
-- **Comment your logic**: Especially around recursive or loop-based behavior.
-- **Explain your thinking** in your function definitions.
-- **README**: Make sure your repo’s README includes how to run the project.
-- **Clean Up**:
-  - Remove debug prints.
-  - Ensure your `.gitignore` ignores `.pyc`, `__pycache__`, etc.
-
----
-
-## Submission
-Once your lab is complete and all tests are passing:
-
-- Push your code to GitHub.
-- Submit the link to your repo through **Canvas using CodeGrade**.
